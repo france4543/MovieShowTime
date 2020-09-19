@@ -39,7 +39,17 @@ export default function MovieDetail({navigation, route}) {
                              {movies.name}
                          </Text>
                          <Text style={{color:'white'}}> ประเภท : {movies.genre.join(', ')} </Text>
+                         <Text style={{color:'white'}}> วันที่เข้าฉาย : {movies.showingAt} </Text>
+                         <Text style={{color:'white'}}> ระยะเวลา : {movies.duration} นาที </Text>
+                         
                     </View>
+                </View>
+                <View style={{borderBottomColor:'white',borderBottomWidth: 1,marginVertical:15}}>
+
+                </View>
+                <View style={{flex:1}}>
+                    <Text style={{color:'white'}}>เรื่องย่อ</Text>
+                    <Text style={{color:'white'}}>{movies.description}</Text>
                 </View>
             </View>
         
